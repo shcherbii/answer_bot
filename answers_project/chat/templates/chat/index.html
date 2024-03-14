@@ -1,0 +1,20 @@
+{% extends 'chat/base.html' %}
+{% block body %}
+<div class="container flex flex-col mx-auto bg-white rounded-lg pt-12 my-5">
+    <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+        <div class="flex flex-col gap-7">
+            <div class="flex flex-col gap-2 px-6 text-center w-10/12 mx-auto">
+                
+            <h2 class="text-3xl font-extrabold leading-tight lg:text-4xl text-dark-grey-900">Hello!</h2>
+            <p class="text-base font-medium leading-7 text-dark-grey-600">Please download the pdf file and I will help you get answers to the questions you are interested in!!!</p>
+            </div>
+            <div class="flex items-center justify-center">
+                <a class="flex items-center justify-center py-4 text-white px-7 rounded-2xl bg-purple-blue-500 hover:bg-purple-blue-600 focus:ring-4 focus:ring-purple-blue-100 transition duration-300" href="{% url 'chat_room'  %}">Want to ask me a question?</a> </br>
+            </div>
+            <div class="flex items-center justify-center">
+                <a class="flex items-center justify-center py-4 text-white px-7 rounded-2xl bg-purple-blue-500 hover:bg-purple-blue-600 focus:ring-4 focus:ring-purple-blue-100 transition duration-300" href="{% url 'upload_file'  %}">Click here to download your pdf files!</a> </br>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
