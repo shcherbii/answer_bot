@@ -61,7 +61,7 @@ def get_rag_promt():
 
 
 def get_llm(vectorstore, prompt):
-    llm = ChatOpenAI(model_name="gpt-3.5-turbo-0613", openai_api_key="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")
+    llm = ChatOpenAI(model_name="gpt-3.5-turbo-0613", openai_api_key=openai_api_key)
 
     qa_chain = RetrievalQA.from_chain_type(
         llm,
